@@ -1,0 +1,27 @@
+{
+  "name": "transaction-dashboard",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "ag-charts-vue3": "^9.3.1",
+    "ag-grid-vue3": "^31.3.2",
+    "axios": "^1.7.2",
+    "vue": "^3.4.29",
+    "vue-router": "^4.3.3",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.3.1"
+  }
+}

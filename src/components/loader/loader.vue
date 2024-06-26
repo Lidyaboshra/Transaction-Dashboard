@@ -1,0 +1,50 @@
+<template>
+    <div class="w-full h-full fixed flex justify-center items-center bg-[#061435] z-10">
+  <div class="loader"></div>
+</div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style>
+.loader {
+  display: inline-flex;
+  gap: 5px;
+  animation: l2-0 1s infinite;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  width: 25px;
+  aspect-ratio: 1;
+  box-shadow: 0 0 0 3px inset #fff;
+  animation: l2-1 1s infinite;
+}
+.loader:after {
+  --s: -1;
+}
+@keyframes l2-0 {
+  0%,
+  50% {
+    transform: rotate(0deg);
+  }
+  80%,
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes l2-1 {
+  0% {
+    transform: translate(0);
+  }
+  50%,
+  80% {
+    transform: translate(calc(var(--s, 1) * 2.5px));
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+</style>
