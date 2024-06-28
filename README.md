@@ -1,3 +1,4 @@
+![Screenshot 2024-06-28 111712](https://github.com/Lidyaboshra/Transaction-Dashboard/assets/51187784/66081f7d-3582-4cc3-b80c-1fad189b00ae)
 # transaction-dashboard
 
 This template should help get you started developing with Vue 3 in Vite.
