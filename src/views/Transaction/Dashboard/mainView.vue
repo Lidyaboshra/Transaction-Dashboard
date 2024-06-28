@@ -1,9 +1,9 @@
 <template>
   <div class="p-5">
-    <h2 class="font-bold mb-3 text-xl">Payment Gateway</h2>
+    <h2 class="mb-3 text-xl font-bold">Payment Gateway</h2>
     <h4 class="text-[#6790F5] mb-3 text-lg font-semibold">Transactions</h4>
     <div
-      class="filters w-full flex items-center justify-between gap-2 mb-5 md:flex-wrap sm:flex-wrap"
+      class="flex items-center justify-between w-full gap-2 mb-5 filters md:flex-wrap sm:flex-wrap"
     >
       <input
         type="date"
@@ -34,7 +34,7 @@
       </div>
       <div class="basis-1/3">
         <div class="summary mb-3 bg-[#061435] p-5 text-white rounded-md">
-          <h4 class="text-xl font-bold mb-5">Summary</h4>
+          <h4 class="mb-5 text-xl font-bold">Summary</h4>
           <div class="px-2 text-[#ACB0BA]">
             <p>Total Income: {{ summary.totalIncome }}</p>
             <p>Total Expenses: {{ summary.totalExpenses }}</p>
@@ -111,7 +111,7 @@ export default {
     const getAllTransactions = async () => {
       try {
          dataService.getAll(
-          "https://run.mocky.io/v3/42563c4e-69d4-43af-b2c5-9e548da73bc7",
+          "https://run.mocky.io/v3/87b5bee3-ae98-4785-9cff-beebf94f60ce",
           (res) => {
             originalData.value = res.map((data) => ({
               "Transaction ID": data.transaction_id,
